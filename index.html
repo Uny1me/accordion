@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./design/design.css">
+    <title>Accordion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__top"></div>
+        <div class="container__bottom">
+            <div class="items">
+
+                <div class="card">
+                    <h3>HTML<button>+</button></h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, odit? Quam tempore, eveniet delectus eaque nostrum dolorem esse cumque sapiente.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS<button>+</button></h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, odit? Quam tempore, eveniet delectus eaque nostrum dolorem esse cumque sapiente.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JAVASCRIPT<button>+</button></h3> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, odit? Quam tempore, eveniet delectus eaque nostrum dolorem esse cumque sapiente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+        const btn = document.getElementsByTagName('button')
+        const div = document.getElementsByClassName('card')
+   
+    for (let i = 0; i < btn.length; i++) {
+      
+        btn[i].addEventListener("click", function () {
+            div[i].classList.toggle('solo');
+        })
+    }
+
+
+
+       
+  
+
+    
+</script>
+
+
+
+
+</body>
+</html>
